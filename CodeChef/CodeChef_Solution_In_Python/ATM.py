@@ -1,0 +1,11 @@
+#ATM
+x,y=map(str,input().split())
+x=int(x)
+y=float(y)
+if(x>=int(y)):
+    print("{0:.2f}".format(y))
+else:
+    if(x%5==0):
+        print("{0:.2f}".format(y-x-0.5))
+    else:
+        print("{0:.2f}".format(y))
