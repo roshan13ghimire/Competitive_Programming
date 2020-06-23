@@ -1,10 +1,10 @@
 #Most_Unstable_Array
-t=int(input())
-for i in range(t):
-    n,m=map(int,input().split())
-    if(n==1):
-        print(0)
-    elif(n==2):
-        print(m)
-    else:
-        print(2*m)
+for i in range(int(input())):
+    n , k = map(int,input().split())
+    a = sorted(list(map(int,input().split())))
+    b = sorted(list(map(int,input().split())))
+    b.reverse()
+    for x in range(k):
+        if a[x]<b[x]:
+            a[x],b[x]=b[x],a[x]
+    print(sum(a))
