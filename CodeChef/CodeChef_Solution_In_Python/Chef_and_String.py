@@ -1,11 +1,18 @@
 #Chef_and_String
-for _ in range(int(input())):
-    l=input()
-    c=0
-    i=1
-    while(i<len(l)):
-        if(abs(ord(l[i-1])-ord(l[i]))==1):
-            c+=1
-            i+=1
-        i+=1
-    print(c)
+s = input()
+a = 0 
+b = 0
+c = 0
+d = 0
+for i in range(len(s)):
+    if s[i]=='C':
+        a+=1
+    elif s[i]=='H' and b<a:
+        b+=1
+    elif s[i]=='E' and c<b:
+        c+=1
+    elif s[i]=='F' and d<c:
+        d+=1
+    else:
+        continue
+print(d)
