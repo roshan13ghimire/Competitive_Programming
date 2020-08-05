@@ -17,3 +17,48 @@ else:
     print("INVALID RANGE")
     
     
+# Flag Solution in C++
+# #include <cmath>
+# #include <cstdio>
+# #include <vector>
+# #include <iostream>
+# #include <algorithm>
+# using namespace std;
+
+# int main() {
+#     long int p,q;
+#     cin>>p>>q;
+#     int flag=0;
+#     for(long int t=p;t<=q;t++)
+#         {
+        
+#         if(t==0)
+#             {
+#             cout<<t;
+            
+#         }
+#         else if(t==10||t==100||t==1000||t==10000)
+#             {
+#             continue;
+#         }
+#         else{
+#              long int n=1;
+#             for( long int i=10;i<=t;i=i*10)
+#                 {
+#                 n=i;
+#             }
+#             n=n*10;
+#              long int s=t*t;
+#             if((s%n)+(s/n)==t)
+#                 {
+#                 flag=1;
+#                 cout<<t<<" ";
+#             }    
+#         }
+#     }
+#     if(flag==0)
+#         {
+#         cout<<"INVALID RANGE";
+#     }
+#     return 0;
+# }
