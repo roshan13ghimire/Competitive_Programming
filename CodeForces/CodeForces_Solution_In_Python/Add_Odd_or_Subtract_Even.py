@@ -1,6 +1,5 @@
 #Add_Odd_or_Subtract_Even
-t=int(input())
-for i in range(t):
+for i in range(int(input()):
     a,b=map(int,input().split())
     if(b>a):
         if((b-a)%2!=0):
