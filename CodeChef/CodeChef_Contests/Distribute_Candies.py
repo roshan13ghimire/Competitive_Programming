@@ -1,6 +1,6 @@
 #Distribute_Candies
 for _ in range(int(input())):
-    n=int(input())
+    n = int(input())
     a=list(map(int,input().split()))
     if(len(a)==0):
         print(a[0])
