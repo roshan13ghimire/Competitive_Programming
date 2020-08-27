@@ -1,5 +1,5 @@
-#Alphabet_Rangoli
-def print_rangoli(size):
+#Alphabet_Ragoli
+def rangoli(size):
     myStr = 'abcdefghijklmnopqrstuvwxyz'[0:size]
     for i in range(size-1, -size, -1):
         x = abs(i)
@@ -9,4 +9,4 @@ def print_rangoli(size):
 
 if __name__ == '__main__':
     n = int(input())
-    print_rangoli(n)
+    rangoli(n)
