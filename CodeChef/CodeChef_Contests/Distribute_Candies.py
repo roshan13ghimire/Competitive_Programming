@@ -10,6 +10,6 @@ for _ in range(int(input())):
         a.sort(reverse=True)
         s=0
         for i in range(2,len(a),3):
-            s+=a[i]
+            s +=a [i]
         print(s)    
         
