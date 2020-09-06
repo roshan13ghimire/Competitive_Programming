@@ -1,6 +1,6 @@
 #Alphabet_Ragoli
 def rangoli(size):
-    myStr = 'abcdefghijklmnopqrstuvwxyz'[0:size]
+    myStr = "abcdefghijklmnopqrstuvwxyz"[0:size]
     for i in range(size-1, -size, -1):
         x = abs(i)
         if x >= 0:
