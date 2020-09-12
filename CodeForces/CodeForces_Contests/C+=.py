@@ -7,7 +7,7 @@ for i in range(m):
         a,b=b,a
     while(b<=n):
         t=a+b
-        a,b=b,t
+        a,b=b, t
         #print(t)
         d+=1
     print(d)    
