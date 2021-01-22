@@ -7,5 +7,5 @@ for _ in range(int(input())):
     B = Counter(b)
     e = A & B
     d = e.values()
-    f = sum(d)
-    print(len(a)+len(b)-2*(f))
+    g = sum(d)
+    print(len(a)+len(b)-2*(g))
